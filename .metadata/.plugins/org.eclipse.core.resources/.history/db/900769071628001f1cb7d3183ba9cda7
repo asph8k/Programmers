@@ -88,15 +88,6 @@ public class ProgrammersCodingTestPrintPrac {
         } else {
         	System.out.println(n + " is even");
         }*/
-		
-		Scanner sc = new Scanner(System.in);
-		String str1 = sc.next();
-		String str2 = sc.next();
-		
-		Solution solution = new Solution();
-		String result = solution.solution(str1, str2);
-		
-		System.out.println("결과 값 확인 : " + result);
 	}
 }
 
@@ -117,11 +108,6 @@ public class ProgrammersCodingTestPrintPrac {
 class Solution {
     public String solution(String str1, String str2) {
         String answer = "";
-        
-        for(int i = 0; i < str1.length(); i++) {
-        	answer += String.valueOf(str1.charAt(i)) + str2.charAt(i);
-        }
-        
         return answer;
     }
 }

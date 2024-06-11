@@ -96,7 +96,7 @@ public class ProgrammersCodingTestPrintPrac {
 		Solution solution = new Solution();
 		String result = solution.solution(str1, str2);
 		
-		System.out.println("결과 값 확인 : " + result);
+		//System.out.print("결과 값 확인 : " + result);
 	}
 }
 
@@ -118,9 +118,13 @@ class Solution {
     public String solution(String str1, String str2) {
         String answer = "";
         
-        for(int i = 0; i < str1.length(); i++) {
-        	answer += String.valueOf(str1.charAt(i)) + str2.charAt(i);
-        }
+        String splitStr1 = str1.substring(0);
+        String splitStr2 = str2.substring(0);
+        System.out.println("splitStr1 값 : " + splitStr1);
+        System.out.println("splitStr2 값 : " + splitStr2);
+        
+        int totalLength = str1.length() + str2.length();
+        //System.out.print("str1,2 length 합친 값 : " + totalLength);
         
         return answer;
     }

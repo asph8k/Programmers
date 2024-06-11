@@ -118,8 +118,16 @@ class Solution {
     public String solution(String str1, String str2) {
         String answer = "";
         
-        for(int i = 0; i < str1.length(); i++) {
-        	answer += String.valueOf(str1.charAt(i)) + str2.charAt(i);
+        String splitStr1 = str1.substring(0, 1);
+        String splitStr2 = str2.substring(0, 1);
+        System.out.println("splitStr1 값 : " + splitStr1);
+        System.out.println("splitStr2 값 : " + splitStr2);
+        
+        int totalLength = str1.length() + str2.length();
+        System.out.println("str1,2 length 합친 값 : " + totalLength);
+        
+        for(int i = 0; i < totalLength; i++) {
+        	answer = splitStr1 + splitStr2;
         }
         
         return answer;
